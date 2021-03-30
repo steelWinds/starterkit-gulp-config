@@ -1,0 +1,24 @@
+*,
+:before,
+:after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+	outline: none;
+}
+
+button {
+	border: 0;
+
+	background: transparent;
+	cursor: pointer;
+
+	& > img {
+		color: red;
+	}
+}

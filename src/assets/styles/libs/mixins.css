@@ -1,0 +1,38 @@
+/* Sizes */
+
+@define-mixin wh $w, $h {
+	width: $w;
+	height: $h;
+}
+
+/* Positions */
+
+@define-mixin pos-0 $pos: absolute {
+	position: $pos;
+	top: 0;
+	left: 0;
+}
+
+@define-mixin pos-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Flex & Grid */
+
+@define-mixin flex-box $dir, $justify, $align, $wrap: wrap {
+	display: flex;
+	flex-flow: $dir $wrap;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@define-mixin grid-layout $rows, $columns, $autoRow: 1fr, $flow: row {
+	display: grid;
+	grid-template-rows: $rows;
+	grid-template-columns: $columns;
+	grid-auto-row: $autoRow;
+	grid-auto-flow: $flow;
+}

@@ -1,0 +1,40 @@
+/* Font Sizes */
+
+$f-size-small: 0.8rem;
+$f-size-normal: 1rem;
+$f-size-medium: 1.5rem;
+$f-size-large: 2.5rem;
+$f-size-x-large: 3.5rem;
+
+/* Z-index deep */
+
+$z-index-small: -1;
+$z-index-normal: 1;
+$z-index-medium: 10;
+$z-index-large: 100;
+$z-index-x-large: 1000;
+
+/* Colors */
+
+/* /// */
+
+/* Wrapper Width sizes */
+
+$w-size-small: 900px;
+$w-size-normal: 1200px;
+$w-size-medium: 1400px;
+$w-size-large: 1600px;
+$w-size-x-large: 1920px;
+
+/* Transition Duration */
+
+$t-speed-slow: 0.6s;
+$t-speed-normal: 0.25s;
+$t-speed-quick: 0.1s;
+
+/* Mobile points width */
+
+$m-notebook: 1440px;
+$m-ipad: 1024px;
+$m-large-phone: 760px;
+$m-medium-phone: 375px;

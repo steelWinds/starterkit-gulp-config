@@ -1,0 +1,32 @@
+# This my code style config
+ 
+# If your IDE editor config does not work for some reason, then I refer you to the site: https://editorconfig.org/
+
+
+## Config ##
+
+# Root directory
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+
+[*.min.*] 
+indent_style = ignore
+end_of_line = ignore
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+[**.{js,jsx,vue,html,ts}]
+indent_style = tab
+indent_size = 4
+
+[**.{css,scss,sass,postcss}]
+indent_style = tab
+indent_size = 2
+
+[**.{json,md}] 
+indent_style = tab
+indent_size = 2
