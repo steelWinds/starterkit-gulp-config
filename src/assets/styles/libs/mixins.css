@@ -7,11 +7,6 @@
 
 /* Positions */
 
-@define-mixin pos-0 $pos: absolute {
-	position: $pos;
-	top: 0;
-	left: 0;
-}
 
 @define-mixin pos-center {
 	position: absolute;
@@ -20,11 +15,20 @@
 	transform: translate(-50%, -50%);
 }
 
+@define-mixin pos $p: relative, $t: 0, $r: 0, $b: 0, $l: 0 {
+	position: $dir;
+	top: $t;
+	right: $r;
+	bottom: $b;
+	right: $l;
+}
+
 /* Flex & Grid */
 
 @define-mixin flex-box $dir, $justify, $align, $wrap: wrap {
 	display: flex;
-	flex-flow: $dir $wrap;
+	flex-direction: $dir;
+	flex-wrap: $wrap;
 	justify-content: $justify;
 	align-items: $align;
 }
@@ -35,4 +39,13 @@
 	grid-template-columns: $columns;
 	grid-auto-row: $autoRow;
 	grid-auto-flow: $flow;
+}
+
+/* Fonts */
+
+@define-mixin font $fFamily: sans-serif, $fSize: 1rem, $fWeight: 400, $fStyle: normal {
+	font-family: $fFamily;
+	font-size: $fSize;
+	font-weight: $fWeight;
+	font-style: $fStyle;
 }

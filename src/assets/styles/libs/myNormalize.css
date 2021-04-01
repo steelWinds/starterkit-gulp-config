@@ -17,8 +17,4 @@ button {
 
 	background: transparent;
 	cursor: pointer;
-
-	& > img {
-		color: red;
-	}
 }
