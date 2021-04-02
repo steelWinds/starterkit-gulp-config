@@ -1,12 +1,23 @@
 # GulpConfig
 
-## Description
+This is starter kit config for gulp and webpack for js.
   
-  **This is starter kit config for gulp and webpack for js.**
-  
-## How it works?
+## Getting Started 
 
-  1. Clone this repo in your directory
-  2. Run: ```npm i```
-  3. Run: ```npm run gulp``` and ```npm run webpack``` for **watch** processes
-  4. Now you can use this config for development, for more information see **package.json**
+### Installing 
+
+1. Check have **node.js** on you machine, clone this repo
+2. Run: ```npm i``` form install dependencies 
+
+## Development 
+
+1. You **cli** command you can see in package.json file
+
+## LICENSE 
+
+This project is licensed under the GPU GPL v3, see LICENSE.md file for more information
+
+## Author 
+
+- [Kirill](https://github.com/steelWinds)
+
