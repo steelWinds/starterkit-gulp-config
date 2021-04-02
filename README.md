@@ -15,7 +15,7 @@ This is starter kit config for gulp and webpack for js.
 
 ## LICENSE 
 
-This project is licensed under the GPU GPL v3, see LICENSE.md file for more information
+This project is licensed under the GNU GPL v3, see LICENSE.md file for more information
 
 ## Author 
 
