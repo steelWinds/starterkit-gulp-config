@@ -11,7 +11,7 @@ This is starter kit config for gulp and webpack for js.
 
 ## Development 
 
-1. You **cli** command you can see in package.json file
+1. All **cli** command you can see in package.json file
 
 ## LICENSE 
 
