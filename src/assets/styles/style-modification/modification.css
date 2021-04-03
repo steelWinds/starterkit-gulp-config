@@ -19,14 +19,10 @@
 /* Grid */
 
 .gridCol3 {
-	@mixin grid-layout repeat(1, 1fr), repeat(3, 1fr)
-
-	justify-content: center;
+	@mixin grid-layout repeat(1, 1fr), repeat(3, 1fr) justify-content: center;
 	align-content: start;
 
 	/* TODO: modification grids */
-
-
 }
 
 /* Backgrounds */

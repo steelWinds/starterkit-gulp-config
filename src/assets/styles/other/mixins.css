@@ -7,7 +7,6 @@
 
 /* Positions */
 
-
 @define-mixin pos-center {
 	position: absolute;
 	top: 50%;
@@ -43,7 +42,8 @@
 
 /* Fonts */
 
-@define-mixin font $fFamily: sans-serif, $fSize: 1rem, $fWeight: 400, $fStyle: normal {
+@define-mixin font $fFamily: sans-serif, $fSize: 1rem, $fWeight: 400,
+	$fStyle: normal {
 	font-family: $fFamily;
 	font-size: $fSize;
 	font-weight: $fWeight;

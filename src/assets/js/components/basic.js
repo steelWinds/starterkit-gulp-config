@@ -1,9 +1,7 @@
 class Basic {
 	cmp = document.querySelector('.basic');
 
-	init() {
-		
-	}
+	init() {}
 }
 
 export default new Basic();
