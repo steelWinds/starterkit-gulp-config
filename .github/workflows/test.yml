@@ -1,0 +1,20 @@
+name: 'lintCheck'
+on:
+  push:
+
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        name: 'setup-node'
+        with:
+          node-version: '14'
+          check-latest: true
+
+      - name: 'install dependencies'
+        run: npm ci
+
+      - name: 'lint'
+        run: npm run lint:prettier-check
