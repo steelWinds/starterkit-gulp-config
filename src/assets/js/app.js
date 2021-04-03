@@ -1,8 +1,8 @@
-import cmp from './components.js';
+import basic from './components/basic.js';
 
 class App {
 	static init() {
-		alert(cmp.main);
+		alert(1);
 	}
 }
 
