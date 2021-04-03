@@ -130,3 +130,5 @@ temp/
 .editorconfig
 .browserslistrc
 /src/assets/fonts
+/src/assets/image
+/src/assets/psd
