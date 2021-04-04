@@ -9,6 +9,10 @@ import postcssNestedProps from 'postcss-nested-props';
 import cssnano from 'cssnano';
 import imageMin from 'gulp-image';
 import del from 'del';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const postcssPlugins = [
 	postcssImport(),
@@ -21,39 +25,39 @@ const postcssPlugins = [
 ];
 
 const PATHS = {
-	styles: './src/assets/styles/main.css',
-	image: './src/assets/image/**/*',
-	fonts: './src/assets/fonts/**/*',
-	templates: './src/templates/**/*',
+	styles: path.resolve(__dirname, 'src/assets/styles/main.css'),
+	image: path.resolve(__dirname, 'src/assets/image/**/*'),
+	fonts: path.resolve(__dirname, 'src/assets/fonts/**/*'),
+	templates: path.resolve(__dirname, 'src/templates/**/*'),
 };
 
 function cssTask() {
 	return gulp
 		.src(PATHS.styles)
 		.pipe(postcss(postcssPlugins))
-		.pipe(gulp.dest('./dist/styles'));
+		.pipe(gulp.dest(path.resolve(__dirname, 'dist/assets/styles')));
 }
 
 function htmlTask() {
-	return gulp.src(PATHS.templates).pipe(gulp.dest('./dist/templates/'));
+	return gulp.src(PATHS.templates).pipe(gulp.dest(path.resolve(__dirname, 'dist/templates')));
 }
 
 function imageTask() {
 	return gulp
 		.src(PATHS.image)
 		.pipe(imageMin())
-		.pipe(gulp.dest('./dist/image'));
+		.pipe(gulp.dest(path.resolve(__dirname, 'dist/assets/image')));
 }
 
 function fontsTask() {
-	return gulp.src(PATHS.fonts).pipe(gulp.dest('./dist/fonts'));
+	return gulp.src(PATHS.fonts).pipe(gulp.dest(path.resolve(__dirname, 'dist/assets/fonts')));
 }
 
 function watch() {
-	gulp.watch(['./src/assets/styles/**/*'], gulp.parallel(cssTask));
-	gulp.watch(['./src/assets/fonts/**/*'], gulp.parallel(fontsTask));
-	gulp.watch(['./src/assets/image/**/*'], gulp.parallel(imageTask));
-	gulp.watch(['./src/templates/**/*'], gulp.parallel(htmlTask));
+	gulp.watch(['src/assets/styles/**/*'], gulp.parallel(cssTask));
+	gulp.watch(['src/assets/fonts/**/*'], gulp.parallel(fontsTask));
+	gulp.watch(['src/assets/image/**/*'], gulp.parallel(imageTask));
+	gulp.watch(['src/templates/**/*'], gulp.parallel(htmlTask));
 }
 
 async function cleanBuild() {

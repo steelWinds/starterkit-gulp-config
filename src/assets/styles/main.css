@@ -1,18 +1,21 @@
 /* Libs */
 
 @import 'normalize.css';
-@import './libs/mixins';
-@import './libs/variables';
-@import './libs/myNormalize';
+@import './other/mixins';
+@import './other/variables';
+@import './other/myNormalize';
 
 /* Fonts */
 
-.jopa {
-	color: black;
-}
+@import '../fonts/OpenSans/openSansFont';
 
 /* Components */
 
+@import './styled-components/container';
+@import './styled-components/header';
+@import './styled-components/wrapper';
+@import './styled-components/main';
+
 /* Modifications */
 
-@import './modification/modification';
+@import './styled-modification/modification';

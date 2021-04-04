@@ -15,7 +15,7 @@
 }
 
 @define-mixin pos $p: relative, $t: 0, $r: 0, $b: 0, $l: 0 {
-	position: $dir;
+	position: $p;
 	top: $t;
 	right: $r;
 	bottom: $b;

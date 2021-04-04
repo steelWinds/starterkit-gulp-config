@@ -1,0 +1,5 @@
+.header {
+	@mixin pos fixed;
+
+	z-index: $z-index-x-large;
+}
