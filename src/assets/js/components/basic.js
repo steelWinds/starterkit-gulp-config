@@ -1,5 +1,5 @@
 class Basic {
-	cmp = document.querySelector('.basic');
+	static cmp = document.querySelector('.basic');
 
 	init() {}
 }
