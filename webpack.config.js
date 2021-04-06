@@ -9,7 +9,6 @@ const PATHS = {
 };
 
 export default (env, args) => {
-	console.log(args.mode);
 
 	return {
 		entry: {
