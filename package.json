@@ -5,8 +5,7 @@
 	"scripts": {
 		"devBuild": "concurrently \"webpack --config=webpack.config.js --mode=development\" \"gulp gulpBuild\"",
 		"prodBuild": "concurrently \"webpack --config=webpack.config.js --mode=production\" \"gulp gulpBuild\"",
-		"webpack": "webpack --config=webpack.config.js --mode=development --watch",
-		"gulp": "gulp gulpWatch",
+		"watch": "concurrently \"webpack --config=webpack.config.js --mode=development --watch\" \"gulp gulpWatch\"",
 		"lint:prettier-check": "prettier --check */**",
 		"lint:prettier-fix": "prettier --write */**"
 	},
