@@ -1,3 +1,5 @@
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/steelWinds/starterkit-gulp-config/lintCheck) ![GitHub](https://img.shields.io/github/license/steelWinds/starterkit-gulp-config?color=#45bf17&style=popout-square)
+
 # starterkit-gulp-config
 
 This is starter kit config for gulp and webpack for js.
