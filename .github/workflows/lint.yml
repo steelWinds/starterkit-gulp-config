@@ -1,14 +1,17 @@
 name: 'lintCheck'
-on:
-  push:
+on: [push, pull_request]
 
 jobs:
   linter:
+    name: code lint check
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        name: 'setup-node'
+      - name: add action checkout
+        uses: actions/checkout@v2
+
+      - name: add node.js
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
           check-latest: true
