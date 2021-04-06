@@ -1,4 +1,5 @@
 import gulp from 'gulp';
+import rename from 'gulp-rename';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import postcssVars from 'postcss-simple-vars';
@@ -35,6 +36,7 @@ function cssTask() {
 	return gulp
 		.src(PATHS.styles)
 		.pipe(postcss(postcssPlugins))
+		.pipe(rename('main.min.css'))
 		.pipe(gulp.dest(path.resolve(__dirname, 'dist/assets/styles')));
 }
 
