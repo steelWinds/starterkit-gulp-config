@@ -86,15 +86,11 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Storybook build outputs
 .out
 .storybook-out
 storybook-static
-
-# rollup.js default build output
-dist/
 
 # Gatsby files
 .cache/
@@ -129,6 +125,8 @@ temp/
 .gitignore
 .editorconfig
 .browserslistrc
-/src/assets/fonts
-/src/assets/image
-/src/assets/psd
+**/assets/fonts
+**/assets/image
+**/assets/psd
+**/*.build.*
+**/*.min.*
