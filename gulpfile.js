@@ -66,6 +66,12 @@ async function cleanBuild() {
 	return delPaths;
 }
 
+async function cleanCssFonts() {
+	let delPaths = await del(['./dist/assets/fonts/**/*.css']);
+
+	return delPaths;
+}
+
 async function gulpWatch() {
 	await gulp
 		.series(
@@ -82,7 +88,8 @@ async function gulpBuild() {
 	await gulp
 		.series(
 			cleanBuild,
-			gulp.parallel(cssTask, htmlTask, imageTask, fontsTask)
+			gulp.parallel(cssTask, htmlTask, imageTask, fontsTask),
+			cleanCssFonts
 		)
 		.call(this);
 

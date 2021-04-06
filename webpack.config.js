@@ -5,7 +5,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const PATHS = {
 	appPoint: path.resolve(__dirname, 'src/assets/js/app.js'),
-	appOutput: path.resolve(__dirname, 'dist/js/'),
+	appOutput: path.resolve(__dirname, 'dist/assets/js/'),
 };
 
 export default (env, args) => {
