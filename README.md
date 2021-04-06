@@ -1,4 +1,4 @@
-[![Lint](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FsteelWinds%2Fstarterkit-gulp-config%2Fbadge%3Fref%3Dmain&style=popout-square)](https://actions-badge.atrox.dev/steelWinds/starterkit-gulp-config/goto?ref=main) ![GitHub](https://img.shields.io/github/license/steelWinds/starterkit-gulp-config?color=green&style=plastic)
+[![Lint](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FsteelWinds%2Fstarterkit-gulp-config%2Fbadge%3Fref%3Dmain&style=popout-square)](https://actions-badge.atrox.dev/steelWinds/starterkit-gulp-config/goto?ref=main) ![GitHub](https://img.shields.io/github/license/steelWinds/starterkit-gulp-config?color=green&style=popout-square)
 
 # starterkit-gulp-config
 
