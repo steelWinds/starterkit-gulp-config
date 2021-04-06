@@ -19,10 +19,27 @@
 /* Grid */
 
 .gridCol3 {
-	@mixin grid-layout repeat(1, 1fr), repeat(3, 1fr) justify-content: center;
-	align-content: start;
+	@mixin grid-layout repeat(1, 1fr), repeat(3, 1fr);
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
 
-	/* TODO: modification grids */
+	@media (max-width: $m-ipad) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.gridColAuto {
+	@mixin grid-layout repeat(1, 1fr), repeat(auto-fit, minmax(270px, 1fr));
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+
+	@media (max-width: $m-ipad) {
+		grid-template-columns: minmax(270px, 1fr);
+	}
 }
 
 /* Backgrounds */
