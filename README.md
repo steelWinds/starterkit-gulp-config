@@ -1,5 +1,5 @@
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/steelWinds/starterkit-gulp-config/lintCheck)](https://actions-badge.atrox.dev/steelWinds/starterkit-gulp-config/goto?ref=main)
-![GitHub](https://img.shields.io/github/license/steelWinds/starterkit-gulp-config?color=#45bf17&style=popout-square)
+[![GitHub](https://img.shields.io/github/license/steelWinds/starterkit-gulp-config?color=#45bf17&style=popout-square)](https://github.com/steelWinds/starterkit-gulp-config/blob/main/LICENSE)
 
 # starterkit-gulp-config
 
