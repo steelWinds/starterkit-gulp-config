@@ -37,8 +37,6 @@
 		"webpack-cli": "^4.5.0"
 	},
 	"dependencies": {
-		"animejs": "^3.2.1",
-		"jquery": "^3.6.0",
 		"normalize.css": "^8.0.1"
 	}
 }
