@@ -8,7 +8,7 @@ import postcssMixin from 'postcss-mixins';
 import postcssImport from 'postcss-import';
 import postcssNestedProps from 'postcss-nested-props';
 import cssnano from 'cssnano';
-import imageMin from 'gulp-image';
+import imageWebp from 'gulp-webp';
 import del from 'del';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -27,7 +27,7 @@ const postcssPlugins = [
 
 const PATHS = {
 	styles: path.resolve(__dirname, 'src/assets/styles/main.css'),
-	image: path.resolve(__dirname, 'src/assets/image/**/*'),
+	image: path.resolve(__dirname, './src/assets/image/**/*'),
 	fonts: path.resolve(__dirname, 'src/assets/fonts/**/*'),
 	templates: path.resolve(__dirname, 'src/templates/**/*'),
 };
@@ -47,7 +47,9 @@ function htmlTask() {
 function imageTask() {
 	return gulp
 		.src(PATHS.image)
-		.pipe(imageMin())
+		.pipe(imageWebp({
+			quality: 40
+		}))
 		.pipe(gulp.dest(path.resolve(__dirname, 'dist/assets/image')));
 }
 
@@ -78,7 +80,8 @@ async function gulpWatch() {
 	await gulp
 		.series(
 			cleanBuild,
-			gulp.parallel(cssTask, htmlTask, imageTask, fontsTask),
+			imageTask,
+			gulp.parallel(cssTask, htmlTask, fontsTask, imageTask),
 			watch
 		)
 		.call(this);
@@ -90,7 +93,7 @@ async function gulpBuild() {
 	await gulp
 		.series(
 			cleanBuild,
-			gulp.parallel(cssTask, htmlTask, imageTask, fontsTask),
+			gulp.parallel(cssTask, htmlTask, fontsTask, imageTask),
 			cleanCssFonts
 		)
 		.call(this);
