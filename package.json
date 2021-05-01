@@ -37,6 +37,9 @@
 		"webpack-cli": "^4.5.0"
 	},
 	"dependencies": {
-		"normalize.css": "^8.0.1"
+		"@fortawesome/fontawesome-free": "^5.15.3",
+		"kute.js": "^2.1.1-alpha3",
+		"normalize.css": "^8.0.1",
+		"tiny-slider": "^2.9.3"
 	}
 }

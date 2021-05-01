@@ -1,6 +1,8 @@
 /* Libs */
 
 @import 'normalize.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import 'tiny-slider/dist/tiny-slider.css';
 @import './other/mixins';
 @import './other/variables';
 @import './other/myNormalize';
