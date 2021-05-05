@@ -19,7 +19,7 @@
 	top: $t;
 	right: $r;
 	bottom: $b;
-	right: $l;
+	left: $l;
 }
 
 /* Flex & Grid */
