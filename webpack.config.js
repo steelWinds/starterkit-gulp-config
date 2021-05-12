@@ -33,7 +33,7 @@ export default () => {
               loader: 'cache-loader',
               options: {
                 cacheDirectory: path.resolve(
-                  __dirname,
+                  dirname,
                   '.cache/js-cache'
                 )
               }
