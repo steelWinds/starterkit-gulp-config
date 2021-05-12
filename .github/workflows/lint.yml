@@ -22,5 +22,5 @@ jobs:
       - name: build
         run: npm run prodBuild
 
-      - name: lint
-        run: npm run lint:prettier-check
+      - name: eslint
+        run: npm run eslint

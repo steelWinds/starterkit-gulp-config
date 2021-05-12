@@ -24,13 +24,13 @@ indent_style = space
 indent_size = 2
 
 [**.{js,jsx,vue,html,ts}]
-indent_style = tab
+indent_style = space
 indent_size = 4
 
 [**.{css,scss,sass,postcss}]
-indent_style = tab
+indent_style = space
 indent_size = 2
 
 [**.{json,md}] 
-indent_style = tab
+indent_style = space
 indent_size = 2

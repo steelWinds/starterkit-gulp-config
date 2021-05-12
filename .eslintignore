@@ -1,0 +1,11 @@
+# Other files 
+.prettierignore
+.gitignore
+.editorconfig
+.browserslistrc
+**/assets/fonts
+**/assets/image
+**/assets/psd
+**/*.build.*
+**/*.min.*
+dist/

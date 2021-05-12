@@ -1,5 +1,5 @@
 .wrapper {
-	@mixin wh 100%, auto;
+  @mixin wh 100%, auto;
 
-	max-width: $w-size-normal;
+  max-width: $w-size-normal;
 }
