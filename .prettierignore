@@ -140,3 +140,6 @@ LICENSE
 **/*.min.*
 
 dist/
+.husky/
+.github/
+.git/

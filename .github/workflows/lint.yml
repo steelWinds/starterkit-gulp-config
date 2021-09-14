@@ -22,5 +22,5 @@ jobs:
             - name: build
               run: npm run prodBuild
 
-            - name: eslint
-              run: npm run eslint
+            - name: lint
+              run: npm run lint:check
