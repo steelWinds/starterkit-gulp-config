@@ -6,8 +6,8 @@
     "devBuild": "concurrently --kill-others-on-fail \"webpack --config=webpack.config.js --mode=development\" \"gulp gulpBuild\"",
     "prodBuild": "concurrently --kill-others-on-fail \"webpack --config=webpack.config.js --mode=production\" \"gulp gulpBuild\"",
     "watch": "concurrently \"webpack --config=webpack.config.js --mode=development --watch\" \"gulp gulpWatch\"",
-    "lint:check": "eslint --no-error-on-unmatched-pattern --ignore-path .eslintignore **/*.js",
-    "lint:fix": "eslint **/* --fix"
+    "lint:check": "concurrently --kill-others-on-fail \"eslint --no-error-on-unmatched-pattern --ignore-path .eslintignore **/*.js\" \"prettier */** --check\"",
+    "lint:fix": "concurrently --kill-others-on-fail \"eslint --no-error-on-unmatched-pattern --ignore-path .eslintignore **/*.js --fix\" \"prettier */** --write\""
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
