@@ -36,10 +36,6 @@
     "arrow-body-style": "off", 
     "function-paren-newline": "off", 
     "space-before-function-paren": "off", 
-    "array-element-newline": "off",
-
-    "prettier/prettier": ["error", {
-      "trailingComma": "none"
-    }]
+    "array-element-newline": "off"
 	}
 }
