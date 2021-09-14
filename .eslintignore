@@ -145,7 +145,7 @@ LICENSE
 **/*.html
 **/*.pug
 
-dist/
+./dist/
 .husky/
 .github/
 .git/
