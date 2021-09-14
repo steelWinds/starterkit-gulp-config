@@ -130,7 +130,7 @@ temp/
 .gitignore
 .editorconfig
 .browserslistrc
-README.md
+README
 LICENSE
 
 **/assets/fonts
@@ -138,11 +138,5 @@ LICENSE
 **/assets/psd
 **/*.build.*
 **/*.min.*
-**/*.css
-**/*.sass
-**/*.scss
-**/*.less
-**/*.html
-**/*.pug
 
 dist/

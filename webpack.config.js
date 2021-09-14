@@ -48,8 +48,6 @@ export default () => {
             aggregateTimeout: 100
         },
 
-        plugins: [
-            new ESLintPlugin()
-        ]
+        plugins: [new ESLintPlugin()]
     };
 };

@@ -41,20 +41,26 @@ function cssTask() {
 }
 
 function htmlTask() {
-    return gulp.src(PATHS.templates).pipe(gulp.dest(path.resolve(dirname, 'dist/templates')));
+    return gulp
+        .src(PATHS.templates)
+        .pipe(gulp.dest(path.resolve(dirname, 'dist/templates')));
 }
 
 function imageTask() {
     return gulp
         .src(PATHS.image)
-        .pipe(imageWebp({
-            quality: 40
-        }))
+        .pipe(
+            imageWebp({
+                quality: 40
+            })
+        )
         .pipe(gulp.dest(path.resolve(dirname, 'dist/assets/image')));
 }
 
 function fontsTask() {
-    return gulp.src(PATHS.fonts).pipe(gulp.dest(path.resolve(dirname, 'dist/assets/fonts')));
+    return gulp
+        .src(PATHS.fonts)
+        .pipe(gulp.dest(path.resolve(dirname, 'dist/assets/fonts')));
 }
 
 function watch() {

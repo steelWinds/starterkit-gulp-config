@@ -1,45 +1,45 @@
 /* Flex */
 
 .flexStartColumn {
-  @mixin flex-box column, flex-start, center;
+    @mixin flex-box column, flex-start, center;
 }
 
 .flexCenterColumn {
-  @mixin flex-box column, center, center;
+    @mixin flex-box column, center, center;
 }
 
 .flexStartRow {
-  @mixin flex-box row, flex-start, center;
+    @mixin flex-box row, flex-start, center;
 }
 
 .flexCenterRow {
-  @mixin flex-box row, center, center;
+    @mixin flex-box row, center, center;
 }
 
 /* Grid */
 
 .gridCol3 {
-  @mixin grid-layout repeat(1, 1fr), repeat(3, 1fr);
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
+    @mixin grid-layout repeat(1, 1fr), repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 
-  @media (max-width: $m-ipad) {
-    grid-template-columns: 1fr;
-  }
+    @media (max-width: $m-ipad) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .gridColAuto {
-  @mixin grid-layout repeat(1, 1fr), repeat(auto-fit, minmax(270px, 1fr));
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
+    @mixin grid-layout repeat(1, 1fr), repeat(auto-fit, minmax(270px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 
-  @media (max-width: $m-ipad) {
-    grid-template-columns: minmax(270px, 1fr);
-  }
+    @media (max-width: $m-ipad) {
+        grid-template-columns: minmax(270px, 1fr);
+    }
 }
 
 /* Backgrounds */
@@ -47,8 +47,8 @@
 /* Width & Height */
 
 .no100vh {
-  height: 100% !important;
-  min-height: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
 }
 
 /* Margins */

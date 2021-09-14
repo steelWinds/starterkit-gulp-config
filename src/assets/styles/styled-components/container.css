@@ -1,4 +1,4 @@
 .container {
-  @mixin wh 100%, 100%;
-  @mixin flex-box column, center, center;
+    @mixin wh 100%, 100%;
+    @mixin flex-box column, center, center;
 }

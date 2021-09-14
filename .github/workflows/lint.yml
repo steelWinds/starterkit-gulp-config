@@ -2,25 +2,25 @@ name: 'lintCheck'
 on: [push, pull_request]
 
 jobs:
-  linter:
-    name: code lint check
-    runs-on: ubuntu-latest
+    linter:
+        name: code lint check
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: add action checkout
-        uses: actions/checkout@v2
+        steps:
+            - name: add action checkout
+              uses: actions/checkout@v2
 
-      - name: add node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          check-latest: true
+            - name: add node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: '14'
+                  check-latest: true
 
-      - name: install dependencies
-        run: npm ci
+            - name: install dependencies
+              run: npm ci
 
-      - name: build
-        run: npm run prodBuild
+            - name: build
+              run: npm run prodBuild
 
-      - name: eslint
-        run: npm run eslint
+            - name: eslint
+              run: npm run eslint

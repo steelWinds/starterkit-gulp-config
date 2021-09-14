@@ -1,51 +1,51 @@
 /* Sizes */
 
 @define-mixin wh $w, $h {
-  width: $w;
-  height: $h;
+    width: $w;
+    height: $h;
 }
 
 /* Positions */
 
 @define-mixin pos-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @define-mixin pos $p: relative, $t: 0, $r: 0, $b: 0, $l: 0 {
-  position: $p;
-  top: $t;
-  right: $r;
-  bottom: $b;
-  left: $l;
+    position: $p;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
 }
 
 /* Flex & Grid */
 
 @define-mixin flex-box $dir, $justify, $align, $wrap: wrap {
-  display: flex;
-  flex-direction: $dir;
-  flex-wrap: $wrap;
-  justify-content: $justify;
-  align-items: $align;
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
 }
 
 @define-mixin grid-layout $rows, $columns, $autoRow: 1fr, $flow: row {
-  display: grid;
-  grid-template-rows: $rows;
-  grid-template-columns: $columns;
-  grid-auto-row: $autoRow;
-  grid-auto-flow: $flow;
+    display: grid;
+    grid-template-rows: $rows;
+    grid-template-columns: $columns;
+    grid-auto-row: $autoRow;
+    grid-auto-flow: $flow;
 }
 
 /* Fonts */
 
 @define-mixin font $fFamily: sans-serif, $fSize: 1rem, $fWeight: 400,
-  $fStyle: normal {
-  font-family: $fFamily;
-  font-size: $fSize;
-  font-weight: $fWeight;
-  font-style: $fStyle;
+    $fStyle: normal {
+    font-family: $fFamily;
+    font-size: $fSize;
+    font-weight: $fWeight;
+    font-style: $fStyle;
 }

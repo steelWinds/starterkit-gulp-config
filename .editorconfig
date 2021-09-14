@@ -19,18 +19,14 @@ end_of_line = ignore
 insert_final_newline = false
 trim_trailing_whitespace = false
 
-[**.yml]
-indent_style = space
-indent_size = 2
-
-[**.{js,jsx,vue,html,ts}]
+[**.{js,jsx,vue,ts}]
 indent_style = space
 indent_size = 4
 
-[**.{css,scss,sass,postcss}]
+[**.{css,scss,sass,postcss, html}]
 indent_style = space
-indent_size = 2
+indent_size = 4
 
-[**.{json,md}] 
+[**.{json,md,yml,yaml}] 
 indent_style = space
 indent_size = 2
