@@ -23,7 +23,7 @@ trim_trailing_whitespace = false
 indent_style = space
 indent_size = 4
 
-[**.css,scss,sass,postcss]
+[**.{css,scss,sass,postcss}]
 indent_style = space
 indent_size = 2
 
