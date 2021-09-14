@@ -139,6 +139,7 @@ LICENSE
 **/*.build.*
 **/*.min.*
 
+dist/**/*
 dist/
 .husky/
 .github/

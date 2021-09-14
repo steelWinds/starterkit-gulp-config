@@ -31,12 +31,12 @@
     "indent": ["error", 4],
     "max-len": ["error", {"code": 80, "ignoreStrings": false}],
 
-    "arrow-parens": "off", // Несовместимо с prettier
-    "object-curly-newline": "off", // Несовместимо с prettier
-    "no-mixed-operators": "off", // Несовместимо с prettier
-    "arrow-body-style": "off", // Это - не наш стиль?
-    "function-paren-newline": "off", // Несовместимо с prettier
-    "space-before-function-paren": "off", // Несовместимо с prettier
+    "arrow-parens": "off", 
+    "object-curly-newline": "off", 
+    "no-mixed-operators": "off", 
+    "arrow-body-style": "off", 
+    "function-paren-newline": "off", 
+    "space-before-function-paren": "off", 
     "array-element-newline": "off",
 
     "prettier/prettier": ["error", {
