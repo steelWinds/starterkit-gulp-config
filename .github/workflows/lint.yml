@@ -23,4 +23,4 @@ jobs:
               run: npm run prodBuild
 
             - name: lint
-              run: npm run eslint
+              run: npm run ling:check
