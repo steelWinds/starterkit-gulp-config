@@ -91,7 +91,7 @@ async function gulpWatch() {
             cleanBuild,
             imageTask,
             audioTask,
-            gulp.parallel(cssTask, htmlTask, fontsTask, imageTask),
+            gulp.parallel(cssTask, htmlTask, fontsTask, imageTask, audioTask),
             watch
         )
         .call(this);
