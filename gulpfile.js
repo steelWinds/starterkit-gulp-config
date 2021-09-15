@@ -29,8 +29,15 @@ const PATHS = {
     styles: path.resolve(dirname, 'src/assets/styles/main.css'),
     image: path.resolve(dirname, './src/assets/image/**/*'),
     fonts: path.resolve(dirname, 'src/assets/fonts/**/*'),
-    templates: path.resolve(dirname, 'src/templates/**/*')
+    templates: path.resolve(dirname, 'src/templates/**/*'),
+    audio: path.resolve(dirname, 'src/assets/audio/**/*')
 };
+
+function audioTask() {
+    return gulp
+        .src(PATHS.audio)
+        .pipe(gulp.dest(path.resolve(dirname, 'dist/assets/audio')));
+}
 
 function cssTask() {
     return gulp
@@ -41,25 +48,21 @@ function cssTask() {
 }
 
 function htmlTask() {
-    return gulp
-        .src(PATHS.templates)
-        .pipe(gulp.dest(path.resolve(dirname, 'dist/templates')));
+    return gulp.src(PATHS.templates)
+        .pipe(gulp.dest(path.resolve(dirname, 'dist/')));
 }
 
 function imageTask() {
     return gulp
         .src(PATHS.image)
-        .pipe(
-            imageWebp({
-                quality: 40
-            })
-        )
+        .pipe(imageWebp({
+            quality: 40
+        }))
         .pipe(gulp.dest(path.resolve(dirname, 'dist/assets/image')));
 }
 
 function fontsTask() {
-    return gulp
-        .src(PATHS.fonts)
+    return gulp.src(PATHS.fonts)
         .pipe(gulp.dest(path.resolve(dirname, 'dist/assets/fonts')));
 }
 
@@ -87,6 +90,7 @@ async function gulpWatch() {
         .series(
             cleanBuild,
             imageTask,
+            audioTask,
             gulp.parallel(cssTask, htmlTask, fontsTask, imageTask),
             watch
         )
@@ -99,7 +103,7 @@ async function gulpBuild() {
     await gulp
         .series(
             cleanBuild,
-            gulp.parallel(cssTask, htmlTask, fontsTask, imageTask),
+            gulp.parallel(cssTask, htmlTask, fontsTask, imageTask, audioTask),
             cleanCssFonts
         )
         .call(this);
